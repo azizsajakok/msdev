@@ -1,0 +1,234 @@
+
+<head>
+	<link href="image/favicon.png" rel="icon">	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza Surabaya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			background-image: url('image/main.jpg');
+        }
+
+        header {
+			background-color: white;
+			color: white;
+			text-align: center;
+			padding: 10px;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+			background-image: url('image/main1.jpg');
+		}
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+			
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        table {
+           
+            border-collapse: collapse;
+        }
+		footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 50%; 
+            border-top-right-radius: 50%; 
+            background-image: url('image/main1.jpg'); 
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                display: block;
+            }
+        }
+    </style>
+	 <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 0px solid #333;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+	<!--sub menu-->
+	<style>
+		.menu-sub {
+			text-align: center;
+		}
+		.menu-item {
+			display: inline-block;
+			margin: 10px;
+		}
+		.menu-item a {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+			padding: 5px 10px;
+			border: 2px solid transparent;
+		}
+		.menu-item.active a {
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		
+
+        <table  align="center" width="80%" border="0" padding= "0px">
+                <tr>
+                    <th rowspan="2">
+					<img height="80px"src="image/logo.png" alt="" class="img-fluid"></a>
+
+					</th>
+                    <th colspan="8">
+						<img height="100%" width="70%" src="image/home/judul.png" alt="" class="img-fluid">
+					</th>		
+					
+                </tr>
+                <tr>
+					<ul>
+                    <td height="20px">
+						<li><a href="index.html"><b>HOME</a></li>
+					</td>
+                    <td>
+						<li><a href=""><b>WHAT'S</a></li>
+					</td>
+					<td>
+						<div class="menu-sub">
+							<div class="menu-item active">
+							<a href="event.html">EVENT</a></div>
+						</div>
+					</td>
+					<td>
+						<li><a href="shop.html"><b>SHOP</a></li>
+					</td>
+					<td>
+						<li><a href="directory.html"><b>DIRECTORY</a></li>
+					</td>
+					<td>
+						<li><a href="kontak.html"><b>CONTACT</a></li>
+					</td>
+					</ul>
+					
+                </tr> 
+			
+        </table><br><br>
+    </header>
+
+    <div class="container">
+        <main>
+            
+            <table width="80%" border="0" align="center">
+                <tr>
+				<ul>
+					<td align="center" >
+						<div class="menu-container">
+						<div class="menu-item active"><a href="event.html">
+						<font color="white">Parkir Timur</font></a></div>
+						<div class="menu-item"><a href="mall.html">
+						<font color="white">Mall</font></a></div>
+						
+						</div>
+						</font>
+					</td>
+				</ul>
+				</tr> 
+				<tr>
+                    <td height="50%" colspan="5"><br></td>
+                   
+                </tr>
+				<tr>
+                    <td align="center" colspan="4">
+						<img height="100%" width="70%" src="image/event/1.jpg" alt="" 
+						class="img-fluid">
+
+					</td>
+                   
+                </tr>
+                <tr>
+                    <td height="50%" colspan="4"><br></td>
+                   
+                </tr>
+                <tr>
+                    <td align="center" colspan="4">
+						<img height="100%" width="70%" src="image/event/2.jpg" alt="" 
+						class="img-fluid">
+
+					</td>
+                   
+                </tr>
+               
+            </table>
+        </main>
+    </div>
+
+    <footer>
+    <table align="center" width="80%" border="0">
+		<tr>
+			<td></td>
+			<td></td>
+			<td><b>Service</td>
+			<td></td>
+			<td><b>Advertisement Media</td>
+			<td></td>
+			<td><b>Career</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="9"><br></td>
+			
+		</tr>
+		<tr>
+			<td><b><font size="2">Opening Hours</b><br>
+				Weekdays : 10AM - 10PM<br>
+				Weekend & Public Holiday : 10AM - 10PM</font>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td colspan="5">
+				<b><font size="2">For further information, please contact:</b><br>
+				PT.BAYU BERINGIN LESTARI<BR>
+				Jl.Pemuda NO. 30-37,Embong Kaliasin,Kec.Genteng,Kota Surabaya<br>
+				(031) 5315088 </font>
+			</td>
+			<td></td>
+			<td>
+				<img width="200px"src="image/sosial_media.png" alt="" class="img-fluid">
+			</td>
+		</tr>
+	</table>
+		
+    </footer>
+</body>

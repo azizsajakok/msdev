@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="image/favicon.png" rel="icon">	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza Surabaya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/main.jpg');
+        }
+
+        header {
+            background-color: white;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background-image: url('image/main1.jpg');
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background-image: url('image/main1.jpg');
+        }
+
+        @media (max-width: 768px) {
+            table {
+                display: block;
+            }
+            th, td {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 0px solid #333;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+	<!-- Buat Slide Header-->
+	<style>
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+  </style>
+  <!--sub menu-->
+	<style>
+		.menu-sub {
+			text-align: center;
+		}
+		.menu-item {
+			display: inline-block;
+			margin: 10px;
+		}
+		.menu-item a {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+			padding: 5px 10px;
+			border: 2px solid transparent;
+		}
+		.menu-item.active a {
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <table align="center" width="80%" border="0" padding="0px">
+            <tr>
+                <th rowspan="2">
+                    <img height="80px" src="image/logo.png" alt="" class="img-fluid">
+                </th>
+                <th colspan="6">
+                   <img height="100%" width="70%" src="image/home/judul.png" alt="" class="img-fluid">
+                </th>		
+            </tr>
+			<tr>
+				<ul>
+                    <td height="20px">
+						<div class="menu-sub">
+							<div class="menu-item active">
+							<a href="index.html">HOME</a>
+							</div>
+						</div>
+					</td>
+                    <td>
+						<li><a href=""><b>WHAT'S</a></li>
+					</td>
+					<td>
+						<li><a href="event.html"><b>EVENT</a></li>
+					</td>
+					<td>
+						<li><a href="shop.html"><b>SHOP</a></li>
+					</td>
+					<td>
+						<li><a href="directory.html"><b>DIRECTORY</a></li>
+					</td>
+					<td>
+						<li><a href="kontak.html"><b>CONTACT</a></li>
+					</td>
+				</ul>
+			</tr> 
+        </table><br><br>
+    </header>
+
+    <div class="container">
+        <main>
+		<div class="slideshow-container">
+    <img class="mySlides" src="image/home/slide1.jpg" alt="" class="img-fluid">
+    <img class="mySlides" src="image/home/slide2.jpg" alt="" class="img-fluid">
+    <img class="mySlides" src="image/home/slide3.jpg" alt="" class="img-fluid">
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); 
+    }
+  </script>
+            <table width="80%" border="0" align="center">
+                <tr>
+                    <td align="center" colspan="4">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td height="50%" colspan="4"><br></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <img width="100%" src="image/home/1.jpg" alt="" class="img-fluid">
+                    </td>
+                    <td align="center">
+                        <img width="100%" src="image/home/2.jpg" alt="" class="img-fluid">
+                    </td>
+                    <td align="center">
+                        <img width="100%" src="image/home/3.jpg" alt="" class="img-fluid">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20%" colspan="4"><br></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <img width="100%" src="image/home/4.jpg" alt="" class="img-fluid">
+                    </td>
+                    <td align="center">
+                        <img width="100%" src="image/home/5.jpg" alt="" class="img-fluid">
+                    </td>
+                    <td align="center">
+                        <img width="100%" src="image/home/6.jpg" alt="" class="img-fluid">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <table align="center" width="80%" border="0">
+            <tr>
+                <td></td>
+                <td></td>
+                <td><font color="black"><b>Service</b></font></td>
+                <td></td>
+                <td><b><font color="black">Advertisement Media</font></b></td>
+                <td></td>
+                <td><b><font color="black">Career</font></b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="8"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    <font size="2" color="black"><b>Opening Hours</b><br>
+                    Weekdays: 10AM - 10PM<br>
+                    Weekend & Public Holiday: 10AM - 10PM</font>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td colspan="5">
+                    <b><font size="2" color="black">For further information, please contact:</b><br>
+                    PT.BAYU BERINGIN LESTARI<br>
+                    Jl.Pemuda NO. 30-37,Embong Kaliasin,Kec.Genteng,Kota Surabaya<br>
+                    (031) 5315088 </font>
+                </td>
+                <td>
+                    <img width="200px" src="image/sosial_media.png" alt="" class="img-fluid">
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
